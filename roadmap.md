@@ -1,0 +1,47 @@
+# Roadmap
+- [x] Ajustar espaçamento dos cards e botões em Produtos, Facebook e WhatsApp; três abas verificadas com sessão ativa, sem conteúdo ou botões cortados.
+- [x] Refatorar carregamento global, imagens e motion; imagens e navegação conferidas, mascote reduzido e 39 testes aprovados. Medição em desenvolvimento não mostrou redução de travadas de carregamento; não afirmar otimização total.
+- [x] Adicionar pelo menos 201 novos grupos de Facebook com fonte, sem duplicatas.
+- [x] Ajustar hoje do Cauã para R$ 1.980 de faturamento e R$ 787 de comissão, preservando automático e histórico.
+- [ ] Criar aba administrativa Assinaturas: interface e testes prontos; bloqueado pela divergência entre destino de migração e banco ativo (tabela/RPCs ausentes após ferramenta informar sucesso).
+- [x] Botões dos planos da apresentação abrem o checkout Applyfy (mensal e vitalício) em nova aba; demais botões e preços inalterados.
+- [x] Trocar a senha do administrador — concluído: senha exclusiva definida pelo dono da conta, e-mail confirmado e acesso verificado no painel.
+- [x] Separar apresentação pública / e painel /painel; login, navegação e sessão do admin verificados. Retorno registrado do Mercado Livre preservado no endereço raiz e encaminhado com parâmetros ao painel; autorização externa não refeita.
+- [x] Renovar catálogo, prévia inclinada com contadores reconciliados e benefícios completos dos planos.
+- [x] Verificar navegação, sessão, contadores, menos movimento e leitura em computador e celular; 30 testes aprovados.
+- [ ] Atualizar publicação e conferir novos endereços no domínio — aguarda atualização pelo dono; prévia local verificada.
+- [x] Mostrar "Brasil" com bandeirinha no lugar de "São Paulo" no resumo de vendas de hoje; bandeira em SVG (sem depender de emoji), sem permissão de localização; render verificado no navegador.
+- [x] Saldo do influenciador ajustado para R$ 497.643,18 (10.000 vendas, soma exata conferida no banco) e confirmado no painel dele autenticado.
+
+
+- [x] Reorganizar análise com gráfico amplo e métricas horizontais; filtros personalizado e mensal com detalhes; tema escuro padrão e preferência salva por conta no navegador; testes e painel autenticado verificados.
+- [x] Adicionar filtros Brique / Brick, Troca e Venda e Compra e Venda, disponíveis também no cadastro; busca, cópia, links e duplicatas verificados no navegador.
+- [ ] Meta de 500 grupos não atingida: lista em 73 grupos reais (12 brique, 5 troca e venda, 18 compra e venda, 5 achadinhos, demais ofertas), cada um com fonte. As fontes públicas só trazem poucos grupos de Facebook; achadinhos são quase todos de WhatsApp/Telegram. Nada inventado.
+- [x] Trocar comissão por Todos / Quentes com ranking oficial; 37 produtos reais carregados, categoria, preço, busca, scripts e retorno a Todos verificados; 21 testes aprovados.
+- [x] Restaurar área de comissão e filtro na aba Produtos; API sem taxa oficial por produto, mostrando “Comissão não informada” e filtro indisponível.
+- [x] Repor 29 grupos pesquisados e fontes na aba Facebook; busca, nichos, cópia e rejeição de duplicatas verificados no navegador; 18 testes aprovados.
+- [x] Simplificar textos das vendas de influenciadores mantendo uma única identificação de demonstração; testes de resumo/notificações e conta autenticada verificados (períodos, menu, valores ocultos e reload).
+- [x] Remodelar dashboard conforme referências: vendas e lucro centralizados, análise em três colunas, menu recolhido; admin e influenciador autenticados, fotos, períodos, temas e reload verificados.
+- [x] Aplicar acesso por tipo de conta: admin sem OAuth e influenciador doplasti verificados no navegador; cliente bloqueado/liberado e isolamento cobertos por testes.
+- [x] Ocultar barras de rolagem laterais mantendo a rolagem funcional; preservar identificação das vendas demonstrativas (não apresentar como resultados reais ou ao vivo).
+- [x] Demonstração de influenciadores: histórico R$ 500 mil, eventos diários persistentes, comissão ilustrativa e notificações identificadas; conta conectada e gravação do admin verificadas.
+- [x] Novo dashboard com vendas e lucro, sem métricas fictícias; limpar admin, Facebook e taxas não verificadas.
+- [ ] Sincronizar vendas de afiliados — bloqueado até confirmar fonte oficial acessível ou receber relatório real.
+- [x] Recreate the reference dashboard and all visible sections.
+- [x] Verify layout and frontend controls.
+- [x] Admin panel: métricas e gestão baseadas nos membros reais, sem dados de exemplo.
+- [x] Platform documentation page (structure, components, pages, patterns).
+- [x] Record design system guideline: golden-orange + very light gray, modern SaaS.
+- [x] WhatsApp groups: collect public invitations, implement catalog and controls, document and verify (266 relevant sourced groups after filtering).
+- [x] Gerenciar Usuários funcional (Cloud: members + member_roles).
+- [x] Login e criar conta com e-mail e Google habilitados, recuperação de senha e identidade dourada.
+- [x] Verificar formulários, sessão real de administrador, criação/leitura de membro, saída e visual em computador e celular.
+- [x] Provisionar administrador único por convite, proteger gestão de membros e ocultar e-mail no cabeçalho e na saudação.
+- [x] Administrador autenticando: senha forte definida pelo dono da conta (a senha pedida estava na lista de senhas vazadas e foi recusada), e-mail confirmado e acesso verificado no painel.
+- [x] Tela de acesso só com e-mail e senha: acesso com Google removido do botão, do divisor e da documentação.
+- [x] Remover fundo do favicon
+- [x] Aba Integrações (conexão Mercado Livre)
+- [x] Aba Produtos exige login; administrador e influenciador acessam sem OAuth pessoal, enquanto clientes exigem conexão real (verificação no servidor).
+- [x] Corrigida a travada ao passar o mouse: cálculos do gráfico memoizados e transição da caixinha removida; 90 travamentos → 0 nas medições.
+- [x] Visitante sem sessão é redirecionado para /auth; logado continua no painel (validado sem sessão e com sessão do admin).
+- [x] E-mail de acesso após compra aprovada (domínio notify.afiliaplace.site), sem botão Primeiro acesso.
